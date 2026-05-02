@@ -1,0 +1,74 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Young Serif", serif;
+  background-color: #fdeff9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+  color: #2c3e50;
+}
+.main {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  border: none;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  background: #ffffff;
+  color: #2c3e50;
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button {
+  background-color: #ff9aa2;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #ff6f91;
+}
+
+.but1 {
+  display: flex;
+  gap: 15px; /* space between buttons */
+  justify-content: center; /* optional: center align */
+}
+
+.but1 button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
